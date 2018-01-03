@@ -1,4 +1,4 @@
-package com.guava.demo;
+package com.guava.domain;
 
 /**
  * @author created by wangyong on 17-12-14

@@ -1,8 +1,8 @@
 package com.guava.demo;
 
 import com.google.common.collect.Lists;
+import com.guava.domain.User;
 import org.junit.Test;
-import sun.text.resources.cldr.lg.FormatData_lg;
 
 import java.util.Arrays;
 import java.util.List;
