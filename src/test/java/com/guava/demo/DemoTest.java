@@ -3,8 +3,10 @@ package com.guava.demo;
 import com.google.common.collect.Lists;
 import com.guava.domain.User;
 import org.junit.Test;
+import sun.awt.util.IdentityArrayList;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -51,6 +53,44 @@ public class DemoTest {
         boolean flag = true;
         msg = flag ? "40209" : "";
         System.out.println(msg);
+    }
+
+    @Test
+    public void compareTest() {
+        User userOne = new User();
+        userOne.setName("张三").setAge(23);
+        User userTwo = new User();
+        userTwo.setName("李四").setAge(25);
+
+        int compare = userOne.compareTo(userTwo);
+        System.out.println(compare);
+
+        List<User> userList = Lists.newLinkedList(Arrays.asList(userOne, userTwo));
+        userList.forEach(System.out::println);
+
+
+        //可以用于FIFO和LiFO队列
+        LinkedList<Integer> linkedList = Lists.newLinkedList();
+        linkedList.addFirst(1);
+        linkedList.addLast(4);
+        linkedList.addLast(5);
+        linkedList.add(6);
+
+        System.out.println(linkedList);
+//        System.out.println(linkedList.peek());
+//        System.out.println(linkedList.pop());
+        System.out.println(linkedList.poll());
+        linkedList.push(7);
+        System.out.println(linkedList);
+    }
+
+
+    @Test
+    public void identityArrayListTest() {
+        IdentityArrayList identityArrayList = new IdentityArrayList();
+
+
+
     }
 
 }

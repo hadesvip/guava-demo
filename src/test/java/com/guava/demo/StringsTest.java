@@ -1,5 +1,6 @@
 package com.guava.demo;
 
+import com.google.common.base.CharMatcher;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
@@ -41,4 +42,17 @@ public class StringsTest {
         }
 
     }
+
+    @Test
+    public void charMatcherTest(){
+        CharMatcher.digit().removeFrom("");
+    }
+
+    @Test
+    public void digtTest() {
+//        Number
+    }
+
+
+
 }
