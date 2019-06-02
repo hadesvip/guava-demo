@@ -31,3 +31,8 @@
 
    * http://www.cnblogs.com/peida/tag/Guava%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
    * http://ifeve.com/google-guava/
+
+
+## 
+ 验证框架  http://neoremind.com/2016/02/java%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91%E9%AA%8C%E8%AF%81%E6%A1%86%E6%9E%B6fluent-validator/
+ mapstruct  

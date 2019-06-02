@@ -3,7 +3,6 @@ package com.guava.demo;
 import com.google.common.collect.Lists;
 import com.guava.domain.User;
 import org.junit.Test;
-import sun.awt.util.IdentityArrayList;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -87,7 +86,7 @@ public class DemoTest {
 
     @Test
     public void identityArrayListTest() {
-        IdentityArrayList identityArrayList = new IdentityArrayList();
+//        IdentityArrayList identityArrayList = new IdentityArrayList();
 
 
 
