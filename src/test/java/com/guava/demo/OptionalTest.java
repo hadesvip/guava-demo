@@ -1,13 +1,11 @@
 package com.guava.demo;
 
-import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Strings;
 import com.google.common.collect.Sets;
 import org.junit.Test;
 
 import java.util.Set;
-import java.util.function.Supplier;
 
 /**
  * 用于防止null的出现

@@ -1,5 +1,7 @@
 package com.bean.po;
 
+import com.google.common.base.MoreObjects;
+
 /**
  * 大哥写点注释吧！
  * @author: wangyong
@@ -23,5 +25,10 @@ public class Person {
 
 	public Person(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return MoreObjects.toStringHelper(this).add("name", name).toString();
 	}
 }
